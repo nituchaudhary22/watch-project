@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Digital Watches</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="https://kit.fontawesome.com/1c49b10068.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<header class="header">
+	<div class="connect">
+		<div class="contact">
+			<div>
+				<i class="fa-solid fa-phone"></i>
+				<p>Phone : +91 1234567890</p>
+			</div>
+			<div>
+				<i class="fa-solid fa-envelope"></i>
+				<p>Email : watches99@gmail.com</p>
+			</div>
+		</div>
+
+		<div class="icons">
+			<i class="fa-brands fa-facebook-f"></i>
+			<i class="fa-brands fa-twitter"></i>
+			<i class="fa-brands fa-linkedin-in"></i>
+			<i class="fa-solid fa-circle-user"></i>
+		</div>
+
+	</div>
+
+	<div class="mbtn" onclick="menu()">
+		<div id="l1"></div>
+		<div id="l2"></div>
+		<div id="l3"></div>
+	</div>
+
+	<nav class="navbar">
+		<h2 id="logo">emexso</h2>
+
+		<ul class="navlinks" id="nav">
+			<li><a href="#">Home</a></li>
+			<li><a href="#">Features</a></li>
+			<li><a href="#">Review</a></li>
+			<li><a href="#">Product</a></li>
+			<li><a href="#">Faq</a></li>
+			<li><a href="#">Contact</a></li>
+		</ul>
+		<a href="#" class="btn">Shop Now</a>
+	</nav>
+
+	<div class="header-content">
+		<div class="left-content">
+			<h1>
+				Best Fashionable Digital Watch.
+			</h1>
+			<p>
+			 Buy premium quality smartwatches.
+			 Explore the wide range of smart watches online with style,innovation and features.Shop now to avail easy 7-day return policy.
+			</p>
+			<a href="#" class="btn">Shop Now &nbsp;&nbsp;<i class="fa-solid fa-arrow-right-long"></i></a>
+		</div>
+
+		<div class="right-content">
+			<img src="images/modal.png">
+		</div>
+	</div>
+</header>
+
+<!-- About the watch section -->
+<section class="section">
+	<div class="top-section">
+		<p id="desc">about the watch</p>
+		<h1>
+			Awesome Digital Watch Can Make Your Life Easier
+		</h1>
+		<p class="para">
+			
+		</p>
+	</div>
+
+	<div class="row">
+		<div class="column">
+			<i class="fa-solid fa-gem"></i>
+			<h3>Attractive Design</h3>
+			<p>
+				UX design for smartwatches has advanced functionality like activity tracking and mobile payments.
+			</p>
+		</div>
+
+		<div class="column">
+			<i class="fa-solid fa-cube"></i>
+			<h3>Smart Features</h3>
+			<p>
+				Battery life: How long the watch lasts on a single charge 
+Fitness tracking: Tracks your physical activities like steps, heart rate, and calories burned 
+Water resistance: Whether the watch can withstand rain or swimming 
+Notifications: Allows you to see notifications from your phone on your watch 
+Heart rate monitoring: Tracks your heart rate in real time 
+			</p>
+		</div>
+
+		<div class="column">
+			<i class="fa-solid fa-clipboard-check"></i>
+			<h3>Lifetime Guarantee</h3>
+			<p>
+				Guarantee of smartwatch lifetime..
+			</p>
+		</div>
+	</div>
+</section>
+
+
+
+<!-- Features section -->
+<section class="section features-box">
+	<div class="top-section">
+		<p id="desc">features of watch</p>
+		<h1>
+			The Watch Has Lots of Excellent Features
+		</h1>
+		<p class="para">
+			Battery life,Fitness tracking,Water resistance,Heart rate monitoring,Contactless payment,Messaging and calling
+		</p>
+	</div>
+
+	<div class="row">
+
+		<div class="features-column">
+			<div class="features">
+				<i class="fa-solid fa-bell"></i>
+				<div>
+					<h3>Notification Alert</h3>
+					<p>
+						Notifications: Allows you to see notifications from your phone on your watch 
+					</p>
+				</div>
+			</div>
+
+			<div class="features">
+				<i class="fa-solid fa-camera"></i>
+				<div>
+					<h3>Instant Video Call</h3>
+					<p>
+						video call instantly with smart watch.
+					</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="watch">
+			<img src="images/watch.png">
+		</div>
+
+		<div class="features-column">
+			<div class="features">
+				<i class="fa-solid fa-message"></i>
+				<div>
+					<h3>User Live Chat</h3>
+					<p>
+						chat instantly with smart watch features.
+					</p>
+				</div>
+			</div>
+
+			<div class="features">
+				<i class="fa-brands fa-app-store-ios"></i>
+				<div>
+					<h3>Install Any App</h3>
+					<p>
+						install any app on the smart watch using internet accessibility.
+					</p>
+				</div>
+			</div>
+		</div>
+
+	</div>
+</section>
+
+
+<footer id="footer">
+	<p>Copytrights &copy; 2025 https://www.emexso.com - All rights reserved</p>
+</footer>
+
+
+<script type="text/javascript">
+	function menu(){
+		if(l2.style.opacity == "0") {
+    			l1.style.transform = `rotate(${0}deg)`;
+    			l3.style.transform = `rotate(${0}deg)`;  
+    			l2.style.opacity   = "1";
+    			nav.style.top = "-100vh";
+    		}
+    		else
+    		{
+    			l1.style.transform = `rotate(${40}deg)`;
+    			l3.style.transform = `rotate(${-40}deg)`;
+    			l2.style.opacity = "0";  
+    			nav.style.top = "0";			
+    		}
+	}
+</script>
+</body>
+</html>
