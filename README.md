@@ -1,1 +1,1 @@
-# watch-project
+# Smart watch project.
